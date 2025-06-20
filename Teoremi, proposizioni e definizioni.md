@@ -91,6 +91,29 @@ Siano $V$ uno spazio vettoriale e $v_1,\dots,v_n \in V$, allora:
 Riassumendo:
 $$w\in \langle v_1,\dots,v_n\rangle \iff \langle v_1,\dots,v_n\rangle=\langle v_1,\dots,v_n,w\rangle$$
 
+### Definizione 3.2.1: Indipendenza lineare
+Dati i vettori $v_1,\dots,v_n$ appartenenti a uno spazio vettoriale $V$ si dicono linearmente indipendenti se per l'equazione $\lambda_1v_1+\dots+\lambda_nv_n=0$ l'unica soluzione è $\lambda_1=\dots=\lambda_n=0$.
+Diciamo quindi l'insieme di vettori $\{v_1,\dots,v_n\}$ linearmente indipendente.
+Al contrario chiameremo i vettori linearmente dipendenti se esistono altre soluzione all'equazione.
+### Osservazione 3.2.3: Lineare dipendenza e vettore nullo
+Se un insieme di vettori contiene il vettore nullo è necessariamente linearmente dipendente.
+Infatti $\lambda_1+v_1+\dots+\lambda_nv_n+\lambda0_v=0$ ha infinite soluzione in quanto $\lambda0_v=0$ è verificato per ogni $\lambda$
+### Proposizione 3.2.4 Lineare dipendenza e combinazione lineare
+Dati i vettori $v_1,\dots,v_n$ sono linearmente dipendenti sse uno dei vettori è combinazione lineare degli altri
+$\{v_1,\dots,v_n\} \ è \ lin. \ dip. \iff \exists i : v_i \in \langle v_1,\dots,v_{i-1},v_{i+1},\dots,v_n \rangle$
+[[Dimostrazioni#Dimostrazione 3..2.4|Dimostrazione]]
+
+### Proposizione 3.2.5: Lineare dipendenza e multipli
+Due vettori sono linearmente indipendenti sse non sono multipli uno dell'altro
+
+### Osservazione 3.2.6: Determinare lineare dipendenza
+Per determinare una lineare dipendenza è sufficiente mostrare che un vettore è combinazione lineare degli altri
+
+### Osservazione 3.2.7: Determinare lineare indipendenza
+Al contrario per determinare se un insieme è linearmente indipendente è necessario dimostrare che nessuno è combinazione lineare di altri.
+
+### Proposizione 3.2.8: Sottoinsieme di insiemi linearmente indipendenti
+Un sottoinsieme di un insieme di vettori linearmente indipendente è ancora linearmente indipendente
 # Capitolo 4: Basi e dimensioni
 # Capitolo 5: Applicazioni lineari
 
