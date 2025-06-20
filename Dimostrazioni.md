@@ -2,7 +2,7 @@
 [[Teoremi, proposizioni e definizioni#Proposizione 3.1.5 Span e sottospazi vettoriali | Proposizione 3.1.5]]
 
 * Definzioni e teoremi usati:
- [[Teoremi, proposizioni e definizioni#Definizione 3.1.2 Sottospazio generato | Definizione di Sottospazio generato]]
+ [[Teoremi, proposizioni e definizioni#Definizione 3.1.2 Sottospazio generato | Definizione di sottospazio generato]]
  [[Teoremi, proposizioni e definizioni#Definizione 2.4.1 Sottospazio vettoriale| Definizione di un sottospazio vettoriale]]
  
 
@@ -18,8 +18,17 @@
 [[Teoremi, proposizioni e definizioni#Proposizione 3.1.8 Insieme di generatori con combinazioni lineari|Proposizione 3.1.8]]
 
 * Definizioni e teoremi usati
-...
+ [[Teoremi, proposizioni e definizioni#Definizione 3.1.2 Sottospazio generato | Definizione di Sottospazio generato]]
 
 Siano $V$ uno spazio vettoriale e $v_1,\dots,v_n \in V$, allora: $w\in \langle v_1,\dots,v_n\rangle \iff \langle v_1,\dots,v_n\rangle=\langle v_1,\dots,v_n,w\rangle$
 
-Dimostro entrambe le di
+Dimostro entrambe le implicazioni:
+1) $w\in \langle v_1,\dots,v_n\rangle \implies \langle v_1,\dots,v_n\rangle=\langle v_1,\dots,v_n,w\rangle$
+	Sia $w$ un vettore combinazione lineare di $v_1,\dots,v_n$, quindi, $w = \alpha_1v_1+\dots+\alpha_nv_n$.
+	Dimostriamo che i due span sono equivalenti.
+	Sia z un vettore tale che $z \in \langle v_1,\dots,v_n,w\rangle$, quindi $z = \beta_1v_1+\dots+\beta_nv_n+\beta w$.
+	Quindi $z = (\beta_1 + \beta\alpha_1)v_1+\dots+(\beta_n+\beta\alpha_n)v_n$, cioè $z \in \langle v_1,\dots,v_n\rangle$
+2) $\langle v_1,\dots,v_n\rangle=\langle v_1,\dots,v_n,w\rangle \implies w\in \langle v_1,\dots,v_n\rangle$ 
+	Supponiamo $\langle v_1,\dots,v_n\rangle=\langle v_1,\dots,v_n,w\rangle$.
+	Siccome i due span sono uguali, il vettore $w\in \langle v_1,\dots,v_n\rangle$
+	
